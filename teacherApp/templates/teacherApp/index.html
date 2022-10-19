@@ -1,0 +1,65 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  </head>
+  <body>
+    <h1>検索画面</h1>
+    <h3>検索条件</h3>
+    <form action="{% url 'search' %}" method="post">
+      {% csrf_token %}
+      <table class="search_condition">
+        <tr>
+          <td class="search_title">学校区分</td>
+          <td class="search_condition">
+            <input type="radio" name="schoolInput" value="element" checked>小学校
+            <input type="radio" name="schoolInput" value="junior">中学校
+            <input type="radio" name="schoolInput" value="high">高校
+          </td>
+        </tr>
+        <tr>
+          <td class="search_title">科目</td>
+          <td class="search_condition">
+            <input type="radio" name="subjectInput" value="japanese" checked>国語
+            <input type="radio" name="subjectInput" value="math">算数
+            <input type="radio" name="subjectInput" value="science">理科
+            <input type="radio" name="subjectInput" value="society">社会
+            <input type="radio" name="subjectInput" value="other">その他
+          </td>
+        </tr>
+        <tr>
+          <td class="search_title">金額</td>
+          <td class="search_condition">
+            <p>
+              <input type="radio" name="moneyInput" value = "1" checked>無料
+              <input type="radio" name="moneyInput" value = "999">1000円未満
+              <input type="radio" name="moneyInput" value = "1000">1000円以上
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="search_title">アプリ評価</td>
+          <td class="search_condition">
+            <input type="radio" name="valueInput" value = "0" checked>指定なし
+            <input type="radio" name="valueInput" value = "2">2以上
+            <input type="radio" name="valueInput" value = "3">3以上
+            <input type="radio" name="valueInput" value = "4">4以上
+          </td>
+        </tr>
+        <tr>
+          <td class="search_title">対応機種</td>
+          <td class="search_condition">
+            <input type="radio" name="machineInput" value="" checked>指定なし
+            <input type="radio" name="machineInput" value="iOS">iOS
+            <input type="radio" name="machineInput" value="Android">Android
+          </td>
+        </tr>
+      </table>
+      <div id="button">
+        <button type="submit">検索</button>
+      </div>
+    </form>
+  </body>
+</html>

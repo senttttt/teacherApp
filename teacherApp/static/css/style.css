@@ -1,0 +1,72 @@
+/*index.html*/
+h1{
+    background-color: rgba(0, 91, 181, 0.671);
+    color: white;
+}
+
+form{
+    padding: 0px 10px 5px 10px;
+    width: 700px;
+    text-align: center;
+}
+
+div{
+    padding: 0px 10px 20px 10px;
+}
+
+#model{
+    padding: 0px 10px 0px 10px;
+}
+
+#button{
+    padding: 10px 10px 0px 10px;
+    margin: auto;
+}
+
+select{
+    margin-right: 20px;
+}
+
+.search_title{
+    height: 50px;
+    width: 100px;
+    border: 1px solid #333;
+    text-align: center;
+    margin:auto;
+    border-collapse: collapse;
+}
+
+.search_condition{
+    height: 50px;
+    width: 700px;
+    border: 1px solid #333;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+/*search.html*/
+#search{
+    border: 1px solid #333;
+}
+
+#content{
+    border: 1px solid #333;
+    padding: 0 10px 0 10px;
+    width: 400px;
+}
+
+#img{
+    border: 1px solid #333;
+    padding: 0 10px 0 10px;
+}
+
+#app_name{
+    color: rgb(73, 151, 224);
+}
+.btn {
+    border-radius: 5px;
+    background-color: lightblue;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+}
