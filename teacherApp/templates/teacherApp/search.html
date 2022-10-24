@@ -6,7 +6,11 @@
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
   </head>
   <body>
-    <h1>検索結果</h1><br>
+    <header id="header">
+      <img src="../../static/images/samplelogo.png" id="logo">
+      <h1 id="h1_header">サイト名</h1>
+    </header>
+    <h2 id="page_name">検索結果</h2>
     <table id="search">
       <tbody>
         {% for app in app %}
@@ -20,6 +24,6 @@
         {% endfor %}
       </tbody>
     </table>
-    <a href="../teacherApp" class="btn">検索画面へ</a>
+    <div class="button"><a href="../teacherApp" class="btn">検索画面へ</a></div>
   </body>
 </html>

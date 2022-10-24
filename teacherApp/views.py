@@ -13,7 +13,7 @@ def search(request):
     money = request.POST['moneyInput']
     value = request.POST['valueInput']
     machine = request.POST['machineInput']
-    app = App.objects.filter(subject = subject)
+    app = App.objects.filter(subject__contains = subject,school__contains = school,money__lte = money,value__gte = value,machine__contains = machine)
     context = {
         'app':app,
     }

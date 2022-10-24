@@ -1,9 +1,52 @@
-/*index.html*/
-h1{
+/*共通*/
+#header{
+    display: flex;
+    width: 100%;
+    height: 70px;
     background-color: rgba(0, 91, 181, 0.671);
+    position: fixed;
+    top: 0;
+    left: 0;
+    align-items: center;
+}
+
+#logo{
+    width: 65px;
+    height: 65px;
+    padding-left: 150px;
+}
+
+#h1_header{
     color: white;
 }
 
+#page_name{
+    padding-left: 150px;
+}
+
+body{
+    padding-top: 60px;
+}
+.btn{
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0 10px;
+	padding: 6px 25px;
+	color: #388ded;
+	font-weight: bold;
+	letter-spacing: 0.5pt;
+	text-decoration: none;
+	background-color: #ffffff;
+	border: 1px solid #388ded;
+	cursor: pointer;
+} 
+
+.btn:hover{
+    color: #ffffff;
+    background-color: #388ded;
+}
+
+/*index.html*/
 form{
     padding: 0px 10px 5px 10px;
     width: 700px;
@@ -18,41 +61,50 @@ div{
     padding: 0px 10px 0px 10px;
 }
 
-#button{
-    padding: 10px 10px 0px 10px;
-    margin: auto;
-}
-
 select{
     margin-right: 20px;
 }
 
 .search_title{
-    height: 50px;
-    width: 100px;
+    height: 60px;
+    width: 150px;
     border: 1px solid #333;
     text-align: center;
-    margin:auto;
     border-collapse: collapse;
 }
 
 .search_condition{
-    height: 50px;
-    width: 700px;
+    height: 60px;
+    width: 600px;
     border: 1px solid #333;
-    border-collapse: collapse;
     text-align: left;
+    border-collapse: collapse;
+    padding-left: 5px;
+}
+
+.radio_button{
+    padding: 0px 10px 0px 10px;
+}
+
+#search_field{
+    margin: 0 auto;
+}
+
+#button{
+    padding: 10px 10px 0px 10px;
+    margin: auto;
 }
 
 /*search.html*/
 #search{
     border: 1px solid #333;
+    margin: 0 auto;
 }
 
 #content{
     border: 1px solid #333;
     padding: 0 10px 0 10px;
-    width: 400px;
+    width: 640px;
 }
 
 #img{
@@ -63,10 +115,9 @@ select{
 #app_name{
     color: rgb(73, 151, 224);
 }
-.btn {
-    border-radius: 5px;
-    background-color: lightblue;
-    padding: 10px;
-    text-decoration: none;
-    color: white;
+
+.button{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
 }
